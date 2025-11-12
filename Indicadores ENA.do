@@ -1,8 +1,10 @@
-
 * 1. Encuesta Nacional Agropecuaria (ENA)
+
 
 clear all
 set more off
+
+2. Carpeta principal
 
 global project "C:\Users\DANIEL\Downloads\Cursos\Construcción de indicadores\Sesión 9"
 
@@ -406,5 +408,6 @@ recode p1105 (1/2=1 "Sin nivel") (3/4=2 "Primaria") ///
             (9/10=5 "Superior universitaria"), gen(nivedu)
 
 tab nivedu [iw=factor]
+
 
 save caract_hogar, replace
